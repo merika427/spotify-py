@@ -3,8 +3,8 @@ from spotipy.oauth2 import SpotifyClientCredentials #ここ以降にいろいろ
 import pandas as pd
 
 
-my_id = 'API Client ID'
-my_secret = 'API Client secret'
+my_id = '9c45c2bcb63347a09f7a27c22a6b6764'
+my_secret = 'f958fd7522af47fb8b9b217cd20c594e'
 
 
 ccm = SpotifyClientCredentials(client_id = my_id, client_secret = my_secret)
@@ -96,6 +96,6 @@ def id_to_csv(track_ids):
     return df
 
 if __name__ == '__main__':
-    # ids = get_to_playlist("プレイリストID") #プレイリストから整形したい場合こっち使用
+    # ids = get_to_playlist("3AbgYvhng4HzJ4lYA8wiXT") #プレイリストから整形したい場合こっち使用
     ids = get_to_album_tracks("アルバムID") 
     id_to_csv(ids)
